@@ -1,0 +1,19 @@
+---
+
+mindmap-plugin: rich
+
+---
+
+# torch
+``` json
+{"theme":"pro2","mindData":[[{"id":"1be8dbad-3982-f8ef","text":"torch","isRoot":true,"main":true,"x":3672,"y":3945,"isExpand":true,"layout":{"layoutName":"mindmap6","direct":"right"},"stroke":"#DCC691","style":{"background-color":"#B85F5F","color":"#DCC691","border-color":"rgb(240, 244, 195)","border-width":0,"padding":[15,18,14,18],"font-size":"18","stroke":"#DCC691"}},{"id":"cce23e1b-a35b-e373","text":"[[Quick start tutorials]]","stroke":"#DCC691","style":{"background-color":"#FFFFFF","color":"#9B806B","border-color":"#DCC691","border-width":0,"padding":[9,14,8,14],"font-size":"14"},"x":3833,"y":3813,"layout":null,"isExpand":true,"pid":"1be8dbad-3982-f8ef"},{"id":"2f0f01f4-8fa9-7c78","text":"Understand the core modules","stroke":"#DCC691","style":{"background-color":"#FFFFFF","color":"#9B806B","border-color":"#DCC691","border-width":0,"padding":[9,14,8,14],"font-size":"14"},"x":3833,"y":3874,"layout":null,"isExpand":true,"pid":"1be8dbad-3982-f8ef","main":false},{"id":"79da2dbe-ff8b-00ca","text":"[Pytorch design phelosophy](https://pytorch.org/docs/stable/community/design.html)","stroke":"#DCC691","style":{"background-color":"#FFFFFF","color":"#9B806B","border-color":"#DCC691","border-width":"1","padding":[9,14,8,14],"font-size":"14"},"x":3833,"y":3984,"layout":{"layoutName":"mindmap2","direct":"right"},"isExpand":true,"pid":"1be8dbad-3982-f8ef"},{"id":"fafb384b-4a5e-d2e5","text":"Distributed learning","stroke":"#DCC691","style":{"background-color":"#FFFFFF","color":"#9B806B","border-color":"rgb(78, 52, 46)","border-width":0,"padding":[9,14,8,14],"font-size":"14"},"x":3833,"y":4094,"layout":null,"isExpand":true,"pid":"1be8dbad-3982-f8ef"},{"id":"431893b2-5bbf-5c4f","text":"[[nn-module]]","stroke":"#DCC691","style":{"background-color":"transparent","color":"#434B54","border-color":"transparent","border-width":0,"padding":[5,8,4,8],"font-size":"12"},"x":4076,"y":3867,"layout":null,"isExpand":true,"pid":"2f0f01f4-8fa9-7c78"},{"id":"d80c3bb6-89d5-b36f","text":"Principle 1: Usability over Performance","stroke":"#DCC691","style":{"background-color":"transparent","color":"#434B54","border-color":"transparent","border-width":0,"padding":[5,8,4,8],"font-size":"12"},"x":4073,"y":3928,"layout":null,"isExpand":true,"pid":"79da2dbe-ff8b-00ca"},{"id":"e31d8391-bcba-db67","text":"Principle 2: Simple Over Easy","stroke":"#DCC691","style":{"background-color":"transparent","color":"#434B54","border-color":"transparent","border-width":0,"padding":[5,8,4,8],"font-size":"12"},"x":4073,"y":3989,"layout":null,"isExpand":true,"pid":"79da2dbe-ff8b-00ca"},{"id":"48427c22-3194-b2ba","text":"Principle 3: Python First with Best In Class Language Interoperability","stroke":"#DCC691","style":{"background-color":"transparent","color":"#434B54","border-color":"transparent","border-width":0,"padding":[5,8,4,8],"font-size":"12"},"x":4073,"y":4050,"layout":null,"isExpand":true,"pid":"79da2dbe-ff8b-00ca"},{"id":"0d0f272d-f36d-ca5f","text":"Simple to understand & debug","stroke":"#DCC691","style":{"background-color":"transparent","color":"#434B54","border-color":"transparent","border-width":0,"padding":[5,8,4,8],"font-size":"12"},"x":4263,"y":3972,"layout":null,"isExpand":true,"pid":"e31d8391-bcba-db67"},{"id":"f0438e81-3e03-8502","text":"**Over ** easy to use","stroke":"#DCC691","style":{"background-color":"transparent","color":"#434B54","border-color":"transparent","border-width":0,"padding":[5,8,4,8],"font-size":"12"},"x":4263,"y":4006,"layout":null,"isExpand":true,"pid":"e31d8391-bcba-db67"}]],"induceData":[],"wireFrameData":[],"relateLinkData":[],"calloutData":[],"opt":{"background":"transparent","fontFamily":"","fontSize":16}}
+```
+
+
+### node element start
+
+[[Quick start tutorials]] ^cce23e1b-a35b-e373
+
+[[nn-module]] ^431893b2-5bbf-5c4f
+
+### node element end

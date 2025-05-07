@@ -1,0 +1,23 @@
+{
+  "show-checkboxes": true,
+  "new-note-folder": "update daily",
+  "tag-colors": [
+    {
+      "tagKey": "#milestone",
+      "color": "rgba(233, 49, 49, 1)",
+      "backgroundColor": "rgba(0, 0, 0, 0.1)"
+    },
+    {
+      "tagKey": "#learning",
+      "color": "rgba(114, 64, 232, 1)",
+      "backgroundColor": "rgba(221, 221, 235, 0.77)"
+    }
+  ],
+  "move-tags": true,
+  "tag-sort": [
+    {
+      "tag": "milestone"
+    }
+  ],
+  "tag-action": "kanban"
+}
