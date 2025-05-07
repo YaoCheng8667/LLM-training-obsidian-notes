@@ -14,7 +14,6 @@ kanban-plugin: board
 
 ## Plan
 
-- [ ] megatron-LM
 - [ ] deepspeed
 - [ ] cuda & ROCm
 - [ ] [[LLM Applications]] #low-priority
@@ -23,6 +22,7 @@ kanban-plugin: board
 
 ## In Progress
 
+- [ ] [[megatron-LM]]
 - [ ] [[torch]]
 - [ ] [[torch.mindmap]]
 - [ ] **torch** [[nn-module]]
