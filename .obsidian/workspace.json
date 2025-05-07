@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM training/Training Framework/megatron-LM/megatron-LM.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "megatron-LM"
+              "title": "README"
             }
           }
         ]
@@ -184,8 +184,9 @@
   },
   "active": "b110952c039a56cf",
   "lastOpenFiles": [
-    "MainPad.excalidraw.md",
     "LLM training/Training Framework/megatron-LM/megatron-LM.md",
+    "README.md",
+    "MainPad.excalidraw.md",
     "web/lib/search-index.json",
     "web/lib/metadata.json",
     "web/lib/styles/other-plugins.css",
@@ -230,7 +231,6 @@
     "Untitled 1.canvas",
     "Untitled 2.canvas",
     "Untitled 3.canvas",
-    "LLM training/Untitled.canvas",
-    "create a link.md"
+    "LLM training/Untitled.canvas"
   ]
 }
