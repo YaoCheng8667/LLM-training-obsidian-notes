@@ -83,11 +83,27 @@ python tools/preprocess_data.py \
 >The interleaved pipelining schedule (more details in Section 2.2.2 of [our paper](https://arxiv.org/pdf/2104.04473.pdf)) can be enabled using the `--num-layers-per-virtual-pipeline-stage` argument, which controls the number of transformer layers in a virtual stage (by default with the non-interleaved schedule, each GPU will execute a single virtual stage with `NUM_LAYERS / PIPELINE_MP_SIZE` transformer layers). The total number of layers in the transformer model should be divisible by this argument value. Additionally, the number of microbatches in the pipeline (computed as `GLOBAL_BATCH_SIZE / (DATA_PARALLEL_SIZE * MICRO_BATCH_SIZE)`) should be divisible by the `PIPELINE_MP_SIZE` when using this schedule (this condition is checked in an assertion in the code). The interleaved schedule is not supported for pipelines with 2 stages (`PIPELINE_MP_SIZE=2`).
 
 
-
 + **Overlap backward and gradient reduction**: with the backward pass when the `--overlap-grad-reduce` command-line option is used.
 
-
-
-
-
++ **Activation Checkpointing and Recomputation**：
+	+ We support two levels of recompute granularity:  `selective` and `full`
+		+ 🛣️**selective**: retains in memory the activations that take less memory storage space and are more expensive to recompute. recomputes the activations that take more memory storage space but are relatively inexpensive to recompute. `--recompute-activations` to use.
+		+ 🌕**full**：recompute saves just the inputs to a transformer layer, or a group, or block, of transformer layers, and recomputes everything else. `--recompute-granularity full`.
+			+ When using `full` activation recompute, there are two methods: `uniform` and `block`, chosen using the `--recompute-method` argument.
+			+ **The `uniform` method** uniformly divides the transformer layers into groups of layers (each group of size `--recompute-num-layers`) and stores the input activations of each group in memory. The baseline group size is 1 and, in this case, the input activation of each transformer layer is stored. When the GPU memory is insufficient, increasing the number of layers per group reduces the memory usage, enabling a bigger model to be trained. For example, when `--recompute-num-layers` is set to 4, only the input activation of each group of 4 transformer layers is stored.
+			+ **The `block` method** : Base on PP(pipeline paralism), For example, when we specify 5 layers(by `--recompute-num-layers`) to recompute of 8 layers per pipeline stage, the input activations of only the first 5 transformer layers are recomputed in the backprop step while the input activations for the final 3 layers are stored.
++ **Distributed Optimizer**
+	+ Usage: `--use-distributed-optimizer`. Compatible with all model and data types.
+	+ The distributed optimizer is a memory savings technique, whereby the optimizer state is evenly distributed across data parallel ranks (versus the traditional method of replicating the optimizer state across data parallel ranks). As described in [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](https://arxiv.org/abs/1910.02054).
++ **Flash Attention**
+	+ Usage: `--use-flash-attn`. Support attention head dimensions at most 128.
+	+ [FlashAttention](https://github.com/HazyResearch/flash-attention) is a fast and memory-efficient algorithm to compute exact attention. It speeds up model training and reduces memory requirement.
+		To install FlashAttention: `pip install flash-attn`
++ **MOE**
+	+ **Introduction:** MoE (Mixture of Experts) is a powerful LLM architecture implemented in the Megatron-Core framework, designed to enhance the efficiency and scalability of large language models. It leverages **Expert Parallelism**, allowing multiple experts to be distributed across different workers, where each worker processes distinct batches of training samples. This method significantly increases computational throughput, enabling models to achieve high performance metrics, such as 47% MFU during BF16 training for 8x7B on H100.
+	+ **Key Features of MoE:**
+		- **Parallelism Techniques**: MoE combines various parallelism strategies, including Expert Parallelism, Data Parallelism, Tensor Parallelism, Sequence Paralleism, Pipeline Parallelism, and Context Parallelism. This combination allows for handling larger model variants effectively.
+		- **Router and Load Balancing**: The system employs advanced routing mechanisms like the Top-K router and utilizes load balancing algorithms to optimize token distribution among experts.
+		- **Performance Optimizations**: Techniques such as GroupedGEMM and FP8 training enhance the efficiency of MoE models, particularly when multiple experts are involved.
+		- **Token Dispatch Mechanism**: MoE supports both dropless and token drop strategies to manage token distribution effectively across experts.
 [^1]: NGC: Nvidia GPU Cloud
