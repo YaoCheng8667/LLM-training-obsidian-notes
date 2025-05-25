@@ -8,8 +8,10 @@ kanban-plugin: board
 
 - [x] Update contents of torch overview & dataset & dataLoader @{2025-05-04} #learning
 - [x] Finish torch quick start tutorials. Learn Pytorch design phelosophy #learning @{2025-05-05}
-- [x] Reading Megatron tutorial, see [[megatron-LM]]. Add the note to the github repo. #learning @{2025-05-07}
+- [x] Reading Megatron tutorial, see [[megatron-LM usage]]. Add the note to the github repo. #learning @{2025-05-07}
 - [x] Finish Megatron tutorial contenst. Learn torch profile. #learning @{2025-05-11}
+- [x] Add FP8 training xmind @{2025-05-25}
+- [x] Add SwiGLU learning notes @{2025-05-25}
 
 
 ## Milestone

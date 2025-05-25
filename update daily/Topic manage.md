@@ -22,7 +22,7 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] [[megatron-LM]]
+- [ ] [[megatron-LM usage]]
 - [ ] [[torch]]
 - [ ] **torch** [[nn-module]]
 

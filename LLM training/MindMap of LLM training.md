@@ -12,7 +12,7 @@
 + **Training Framework**
 	- [ ] [[torch]]
 	- [ ] Hugging-Face
-	- [ ] [[megatron-LM]]
+	- [ ] [[megatron-LM usage]]
 	- [ ] deepspeed
 + **Parallelize & acceleration for training**
 	- [ ] Profiling

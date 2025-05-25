@@ -4,21 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a97c08535c686922",
+        "id": "10098dd4becfa79b",
         "type": "tabs",
         "children": [
           {
-            "id": "e111b2d2e189b6f0",
+            "id": "3832d63cbc70ff5d",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "LLM training/Training Framework/torch/torch.md",
-                "bFile": "LLM training/Training Framework/torch/torch.md",
-                "aRef": ""
+                "file": "LLM training/Transformer and SOTA Models/Structures/SwiGLU.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "diff",
-              "title": "Diff: torch"
+              "icon": "lucide-file",
+              "title": "SwiGLU"
             }
           }
         ]
@@ -176,7 +177,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 728.5
+    "width": 356.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,27 +193,37 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e111b2d2e189b6f0",
+  "active": "3832d63cbc70ff5d",
   "lastOpenFiles": [
+    "LLM training/Transformer and SOTA Models/Structures/MLA.md",
+    "LLM training/Transformer and SOTA Models/Structures/RoPE.md",
+    "LLM training/Transformer and SOTA Models/Structures/SwiGLU.md",
+    "LLM training/Transformer and SOTA Models/Transformer and SOTA Models.md",
+    "LLM training/Parallelize and Acceleration/5D parallelize/Expert Parallelism.md",
+    "LLM training/Parallelize and Acceleration/5D parallelize/Context Parallelism.md",
+    "Images/pinned_memory.png",
+    "LLM training/Parallelize and Acceleration/Parallelize and Acceleration.md",
     "LLM training/Parallelize and Acceleration/FP8 training.md",
+    "update daily/daily.md",
+    "LLM training/MindMap of LLM training.md",
+    "update daily/Topic manage.md",
+    "LLM training/Training Framework/megatron-LM/megatron-LM usage.md",
+    "LLM training/Training Framework/torch/Profile.md",
+    "LLM training/Training Framework/torch/Quick start tutorials.md",
+    "LLM training/Training Framework/torch/nn-module.md",
+    "LLM training/Parallelize and Acceleration/5D parallelize",
+    "Images/activation_functions.png",
+    "Images/GLU.png",
+    "LLM training/Training Framework/torch/torch.md",
+    "LLM training/Transformer and SOTA Models/Structures",
+    "Images/FP8 training.png",
+    "LLM training/Applications/LLM Applications.md",
     "Xmind/FP8 training.xmind",
     "MainPad.excalidraw.md",
-    "update daily/Topic manage.md",
     "README.md",
-    "LLM training/Training Framework/megatron-LM/megatron-LM.md",
-    "LLM training/MindMap of LLM training.md",
-    "Images/FP8 training.png",
     "Xmind",
-    "LLM training/Applications/LLM Applications.md",
     "LLM training/Training Framework/torch/What is memory pinning in pytorch.md",
-    "Images/pinned_memory.png",
     "FP8 training.md",
-    "LLM training/Parallelize and Acceleration/Parallelize and Acceleration.md",
-    "LLM training/Training Framework/torch/Quick start tutorials.md",
-    "LLM training/Training Framework/torch/Profile.md",
-    "update daily/daily.md",
-    "LLM training/Training Framework/torch/nn-module.md",
-    "LLM training/Training Framework/torch/torch.md",
     "LLM training/Training Framework/Transformer Engine",
     "test/test view data.md",
     "web/lib/search-index.json",
@@ -220,22 +231,15 @@
     "web/lib/styles/other-plugins.css",
     "web/lib/styles/obsidian.css",
     "web/lib/styles/main-styles.css",
-    "web/lib/styles/global-variable-styles.css",
-    "web/lib/styles",
     "web/lib/media/favicon.png",
     "web/lib/media/6155340132a851f6089e.svg",
     "web/lib/media/pinned_memory.png",
     "web/images/pinned_memory.png",
     "web/Images/pinned_memory.png",
     "test/test dataview.md",
-    "LLM training/Transformer and SOTA Models/Transformer and SOTA Models.md",
     "LLM training/Training Framework/torch/nn Module.md",
     "LLM training/Training Framework/torch/torch Module.md",
     "Daily/2025-05-04.md",
-    "Daily/2025-05-05.md",
-    "Excalidraw/Drawing 2025-05-04 16.41.10.excalidraw.md",
-    "Excalidraw/Drawing 2025-05-03 21.48.00.excalidraw.md",
-    "LLM training/Untitled mindmap.md",
     "LLM training/Training Framework/Untitled.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas",
