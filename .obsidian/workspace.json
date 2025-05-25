@@ -4,22 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "db15c187b8738836",
+        "id": "a97c08535c686922",
         "type": "tabs",
         "children": [
           {
-            "id": "e24fb93faa7babbc",
+            "id": "e111b2d2e189b6f0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "LLM training/Training Framework/megatron-LM/megatron-LM.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "aFile": "LLM training/Training Framework/torch/torch.md",
+                "bFile": "LLM training/Training Framework/torch/torch.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "megatron-LM"
+              "icon": "diff",
+              "title": "Diff: torch"
             }
           }
         ]
@@ -79,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 357.5026054382324
+    "width": 322.5026054382324
   },
   "right": {
     "id": "09b75c7ab374744c",
@@ -177,7 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5
+    "width": 728.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,20 +192,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e24fb93faa7babbc",
+  "active": "e111b2d2e189b6f0",
   "lastOpenFiles": [
-    "LLM training/Training Framework/torch/Quick start tutorials.md",
-    "LLM training/Training Framework/torch/nn-module.md",
-    "LLM training/Training Framework/torch/torch.mindmap.md",
-    "LLM training/Training Framework/torch/torch.md",
-    "LLM training/Training Framework/megatron-LM/megatron-LM.md",
-    "README.md",
-    "update daily/daily.md",
+    "LLM training/Parallelize and Acceleration/FP8 training.md",
+    "Xmind/FP8 training.xmind",
     "MainPad.excalidraw.md",
     "update daily/Topic manage.md",
+    "README.md",
+    "LLM training/Training Framework/megatron-LM/megatron-LM.md",
+    "LLM training/MindMap of LLM training.md",
+    "Images/FP8 training.png",
+    "Xmind",
+    "LLM training/Applications/LLM Applications.md",
+    "LLM training/Training Framework/torch/What is memory pinning in pytorch.md",
+    "Images/pinned_memory.png",
+    "FP8 training.md",
+    "LLM training/Parallelize and Acceleration/Parallelize and Acceleration.md",
+    "LLM training/Training Framework/torch/Quick start tutorials.md",
+    "LLM training/Training Framework/torch/Profile.md",
+    "update daily/daily.md",
+    "LLM training/Training Framework/torch/nn-module.md",
+    "LLM training/Training Framework/torch/torch.md",
     "LLM training/Training Framework/Transformer Engine",
     "test/test view data.md",
-    "LLM training/MindMap of LLM training.md",
     "web/lib/search-index.json",
     "web/lib/metadata.json",
     "web/lib/styles/other-plugins.css",
@@ -215,17 +223,11 @@
     "web/lib/styles/global-variable-styles.css",
     "web/lib/styles",
     "web/lib/media/favicon.png",
-    "web/lib/html/file-tree.html",
-    "web/lib/html",
     "web/lib/media/6155340132a851f6089e.svg",
     "web/lib/media/pinned_memory.png",
     "web/images/pinned_memory.png",
-    "LLM training/Training Framework/torch/What is memory pinning in pytorch.md",
-    "LLM training/Parallelize and Acceleration/Parallelize and Acceleration.md",
     "web/Images/pinned_memory.png",
-    "Images/pinned_memory.png",
     "test/test dataview.md",
-    "LLM training/Applications/LLM Applications.md",
     "LLM training/Transformer and SOTA Models/Transformer and SOTA Models.md",
     "LLM training/Training Framework/torch/nn Module.md",
     "LLM training/Training Framework/torch/torch Module.md",
@@ -234,10 +236,8 @@
     "Excalidraw/Drawing 2025-05-04 16.41.10.excalidraw.md",
     "Excalidraw/Drawing 2025-05-03 21.48.00.excalidraw.md",
     "LLM training/Untitled mindmap.md",
-    "LLM training/test.md",
     "LLM training/Training Framework/Untitled.canvas",
     "Untitled.canvas",
-    "LLM training/Training Framework/Training Framework.md",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
     "Untitled 3.canvas",

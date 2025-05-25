@@ -4,7 +4,7 @@
 + 📰**paper:** https://arxiv.org/pdf/2406.07887
 + 📽️ [李沐论文精读](https://www.bilibili.com/video/BV1nB4y1R7Yz/?vd_source=2b4793ad721ff6ac59256683a01dd0c0)
 
-## 2. Usage steps
+## 2. Usage step
 ### 2.1 installation
 
 We strongly recommend using the latest release of [NGC's PyTorch container](https://ngc.nvidia.com/catalog/containers/nvidia:pytorch)[^1] with DGX nodes. If you can't use this for some reason, use the latest pytorch, cuda, nccl, and NVIDIA [APEX](https://github.com/NVIDIA/apex#quick-start) releases. Data preprocessing requires [NLTK](https://www.nltk.org/install.html), though this is not required for training, evaluation, or downstream tasks.

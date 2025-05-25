@@ -24,7 +24,6 @@ kanban-plugin: board
 
 - [ ] [[megatron-LM]]
 - [ ] [[torch]]
-- [ ] [[torch.mindmap]]
 - [ ] **torch** [[nn-module]]
 
 
